@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= pageTitle
+    link(rel="stylesheet", href="/css/style.css")
+
+  body
+    div.content
+      h1 Add a pet 
+      div.form-container
+        form(action="/update-cobj" method="post")
+          label(for="name") Pet Name
+          input(type="text" name="name")
+          label(for="type") Type
+          input(type="text" name="type")
+          label(for="color") Color
+          input(type="text" name="color")
+          button(type="submit") Add a pet
+        a(href="/") Return to the homepage
